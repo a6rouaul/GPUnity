@@ -17,6 +17,7 @@ Ce mode est basé sur l'algorithme Wave Function Collapse qui permet de génére
   - Window > Package Manager
   - Télécharger ‘Cinemachine’
 - Cloner le projet sur votre machine [https://github.com/a6rouaul/GPUnity]
+  - Ou télécharger le zip
 - Ouvrez le avec Unity
   - File > Build settings…
     - Ajouter MenuScene et GameSCene dans ‘Scenes in Build’
