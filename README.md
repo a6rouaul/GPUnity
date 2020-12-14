@@ -43,8 +43,7 @@ Ce mode est basé sur l'algorithme Wave Function Collapse qui permet de génére
 - Cliquer sur ‘Play’
 
 ## Jouer à partir d’un exécutable : 
-  - Allez dans le fichier Builds
-  - Choisissez votre OS et lancez le jeu.
+  - Téléchargez le ZIP de votre OS et lancez le jeu.
  
 ## Bugs encore présents :
   - Si le joueur se place entre deux tiles et qu’il n’y a qu’une tile d’espace, il restera coincé et le player sera déplacé selon l’axe Y jusqu’à ce qu’il n’y ai plus de collision.
