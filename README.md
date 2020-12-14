@@ -20,6 +20,7 @@ Ce mode est basé sur l'algorithme Wave Function Collapse qui permet de génére
   - Ou télécharger le zip
 - Ouvrez le avec Unity
   - File > Build settings…
+    - (S'il y a déjà des scènes, vous pouvez les enlever et les remetter pour être sûr)
     - Ajouter MenuScene et GameSCene dans ‘Scenes in Build’
     - S’assurer que MenuScene à l’index 0 et que GameScene à l’index 1 
 - Ouvrir GameScene
