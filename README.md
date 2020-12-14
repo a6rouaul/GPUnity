@@ -5,12 +5,12 @@ Nous avons utilisé les ressources graphiques disponibles sous licences gratuite
 https://pixel-frog.itch.io/pixel-adventure-1
 
 # Explications 
-# Safety mode
+## Safety mode
 Ce mode vous assure que le niveau généré sera correct. Ce mode utilise un algorithme sans intelligence artificielle poussée. On définit à la main un contour pour notre niveau et on définit un objet qui va se déplacer de manière aléatoire dans ce cadre. Cet objet a plusieurs contraintes: il ne peut pas revenir sur une case de la map déjà traversée, il doit s'arrêter sur la ligne la plus en bas du cadre et il ne peut pas sortir du cadre. On est dans une approche constructive car le chemin se construit au fur et à mesure de l’avancée de l’objet. Une fois que l’on a défini un chemin cohérent, on définit une liste de CellMode (enum permettant de définir les ouvertures Top, Bottom, Right, Left) pour chaque cellule de la map, qui doit permettre de traverser le chemin sans encombre. Une fois le chemin créé avec des cellules ayant un type correct, on créé de manière aléatoire toutes les autres cellules vides de la map en choisissant de manière aléatoire son CellMode.
-# WFC mode 
+## WFC mode 
 Ce mode est basé sur l'algorithme Wave Function Collapse qui permet de générer un niveau à partir d’un seul exemple donné en entrée. Cet algorithme permet d’obtenir des niveaux parfois incroyables tout comme des niveaux très mauvais. En fonction de la figure donnée en entrée, cet algorithme va “apprendre” à identifier les différents éléments de la figure, dans notre cas des cellules de différents types mises les unes à la suite des autres. Il va ensuite créer une map avec le même type d'éléments que ceux envoyés en entrée, en s’inspirant de la logique d’associations des cellules de notre entrée.
 
-# Pour commencer
+## Pour commencer
 - Télécharger Unity
   - Version de développement : Unity 2019.4.15f1
 - Dans Unity
@@ -40,11 +40,11 @@ Ce mode est basé sur l'algorithme Wave Function Collapse qui permet de génére
 - Ouvrir MenuScene
 - Cliquer sur ‘Play’
 
-# Jouer à partir d’un exécutable : 
+## Jouer à partir d’un exécutable : 
   - Allez dans le fichier Builds
   - Choisissez votre OS et lancez le jeu.
  
-# Bugs encore présents :
+## Bugs encore présents :
   - Si le joueur se place entre deux tiles et qu’il n’y a qu’une tile d’espace, il restera coincé et le player sera déplacé selon l’axe Y jusqu’à ce qu’il n’y ai plus de collision.
   - BorderGrid et BackgroundGrid ne sont pas générés automatiquement. En cas de modifications de la taille de la map, il faut modifier à la main ces 2 éléments pour ne pas pouvoir sortir du niveau et pour avoir un joli fond à notre map.
 
